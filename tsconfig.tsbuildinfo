@@ -1,0 +1,1 @@
+{"root":["./src/app.ts","./src/server.ts","./src/config/connections.ts","./src/controllers/thoughtcontroller.ts","./src/controllers/usercontroller.ts","./src/models/reaction.ts","./src/models/thoughts.ts","./src/models/user.ts","./src/models/index.ts","./src/routes/thoughtroutes.ts","./src/routes/userroutes.ts"],"errors":true,"version":"5.8.2"}
