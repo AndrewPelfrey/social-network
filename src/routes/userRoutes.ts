@@ -12,21 +12,20 @@ import {
 
 const router = express.Router();
 
-// /api/users
 router.route('/')
-  .get(getAllUsers)           // GET all users
-  .post(createUser);           // POST a new user
+  .get(getAllUsers)           
+  .post(createUser);           
 
 // /api/users/:userId
 router.route('/:userId')
-  .get(getUserById)           // GET a single user by ID
-  .put(updateUser)            // PUT to update a user by ID
-  .delete(deleteUser);        // DELETE a user by ID
+  .get(getUserById)           
+  .put(updateUser)         
+  .delete(deleteUser);    
 
 // /api/users/:userId/friends/:friendId
 router.route('/:userId/friends/:friendId')
-  .post(addFriend)            // POST to add a friend
-  .delete(removeFriend);      // DELETE to remove a friend
+  .post(addFriend)           
+  .delete(removeFriend);    
 
 // /api/users/:userId/thoughts
 router.route('/:userId/thoughts')
